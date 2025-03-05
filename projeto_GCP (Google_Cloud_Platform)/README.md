@@ -58,7 +58,8 @@ blob.upload_from_filename('dadostratados.csv')
 
 ## Pré-Requisitos
 Python 3.x
-Bibliotecas:
+
+## Bibliotecas:
 pandas
 google-cloud-storage
 ## Instalação das Dependências:
