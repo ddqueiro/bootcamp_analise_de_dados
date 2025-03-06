@@ -1,4 +1,4 @@
-### Projeto de Consultas e Análise de Dados com MySQL e Pandas
+# Projeto de Consultas e Análise de Dados com MySQL e Pandas
 
 ## Descrição do Projeto
 
