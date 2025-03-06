@@ -1,4 +1,4 @@
-### Projeto de ETL - Mercado Livre
+# Projeto de ETL - Mercado Livre
 Este projeto consiste na criação de um processo completo de ETL utilizando a API pública do Mercado Livre. O objetivo é realizar a extração, transformação e carga de dados em diversas plataformas e ferramentas, como Google Cloud, MongoDB Atlas, SQL e BigQuery.
 
 ## Tarefas Realizadas:
