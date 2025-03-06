@@ -62,12 +62,11 @@ google-cloud-bigquery
 !pip install google-cloud-bigquery
 
 ```
-# 2. Execute cada célula do notebook conforme a sequência do processo de ETL.
-# 3. Certifique-se de configurar corretamente o seu projeto no Google Cloud e as credenciais de acesso ao MongoDB Atlas.
 
-# 4. Após o processamento, os dados serão enviados para os destinos especificados (GCS, MongoDB Atlas, SQL e BigQuery).
-
-# 4. Conecte os dados no Looker Studio para gerar relatórios interativos.
+# 2.Execute cada célula do notebook conforme a sequência do processo de ETL.
+# 3.Certifique-se de configurar corretamente o seu projeto no Google Cloud e as credenciais de acesso ao MongoDB Atlas.
+# 4.Após o processamento, os dados serão enviados para os destinos especificados (GCS, MongoDB Atlas, SQL e BigQuery).
+# 5.Conecte os dados no Looker Studio para gerar relatórios interativos.
 
 ## Conclusão
 Este projeto fornece um pipeline completo de ETL utilizando ferramentas e serviços da Google Cloud, MongoDB Atlas e Looker Studio. Ele permite realizar a extração de dados de uma API pública, transformá-los, e enviá-los para diversas plataformas para análise e visualização.
