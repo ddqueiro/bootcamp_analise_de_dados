@@ -45,6 +45,7 @@ A base de dados contém informações sobre funcionários, incluindo idade, sal�
 ## 🚀 Como Executar
 
 ## 1. Instale as dependências necessárias (caso ainda não tenha instalado pandas):
+
    ```python
    pip install pandas
  ```

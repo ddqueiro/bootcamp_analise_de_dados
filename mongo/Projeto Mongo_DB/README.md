@@ -84,5 +84,7 @@ colecao_pagamentos = pd.DataFrame(list(cursor))
 ```
 
 2.Configure sua string de conexão MongoDB Atlas.
+
 3.Carregue os dados CSV e insira no banco de dados.
+
 4.Execute as consultas desejadas e visualize os resultados em DataFrames.
