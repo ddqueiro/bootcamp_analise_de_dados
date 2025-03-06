@@ -68,5 +68,3 @@ google-cloud-bigquery
 # 4.Após o processamento, os dados serão enviados para os destinos especificados (GCS, MongoDB Atlas, SQL e BigQuery).
 # 5.Conecte os dados no Looker Studio para gerar relatórios interativos.
 
-## Conclusão
-Este projeto fornece um pipeline completo de ETL utilizando ferramentas e serviços da Google Cloud, MongoDB Atlas e Looker Studio. Ele permite realizar a extração de dados de uma API pública, transformá-los, e enviá-los para diversas plataformas para análise e visualização.
