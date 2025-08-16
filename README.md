@@ -1,51 +1,45 @@
-# 🎓 Repositório de Projetos da Faculdade
+# 🚀 Projetos do Bootcamp de Análise de Dados
 
-Bem-vindo(a) ao meu **Repositório de Projetos da Faculdade**!  
-Aqui estão reunidos os principais trabalhos desenvolvidos durante o curso de **Gestão da Tecnologia da Informação**, abrangendo áreas como **Matemática Aplicada, Ciência de Dados, Cibersegurança, Redes de Computadores, Big Data e Inteligência Artificial Explicável (XAI)**.  
-
-Este espaço funciona como uma vitrine da minha trajetória acadêmica, mostrando diferentes tecnologias, metodologias e formas de resolução de problemas.  
+Este repositório reúne os projetos desenvolvidos durante o **Bootcamp de Análise de Dados**, explorando conceitos de **Bancos de Dados, ETL, Cloud Computing, Python e Análise de Dados**.  
+Cada projeto é um estudo de caso prático com aplicação de ferramentas essenciais para a área de **Dados**.  
 
 ---
 
-## 📂 Projetos
+## 📂 Projetos Desenvolvidos
 
-### 📈 Matemática Aplicada
-- [**aplied_math_regressao-linear-wave-surfboards**](https://github.com/ddqueiro/gestao_tecnologia_da_informacao/tree/main/aplied_math_regressao-linear-wave-surfboards)  
-  Regressão linear aplicada à análise de mercado de pranchas de surf.  
+### 🗄️ Banco de Dados (MongoDB)
+- [**Projeto de Integração MongoDB com Google Colab**](https://github.com/ddqueiro/bootcamp_analise_de_dados/tree/main/Projeto%20Mongo_DB)  
+  Implementação de banco de dados **MongoDB** integrado ao **Google Colab**, permitindo consultas e manipulação de dados em ambiente interativo.  
 
-### 🗄️ Big Data
-- [**big_data_mongodb**](https://github.com/ddqueiro/gestao_tecnologia_da_informacao/tree/main/big_data_mongodb)  
-  Experimentos com MongoDB para cenários de Big Data.  
+- [**Gerenciamento de Aluguéis de Carros com MongoDB**](https://github.com/ddqueiro/bootcamp_analise_de_dados/tree/main/Projeto_Mongo)  
+  Modelagem e gerenciamento de dados de uma **locadora de veículos**, aplicando conceitos de NoSQL e operações CRUD no **MongoDB**.  
 
-### 🌐 Redes de Computadores
-- [**computer_network_expansão_rede**](https://github.com/ddqueiro/gestao_tecnologia_da_informacao/tree/main/computer_network_expans%C3%A3o_rede)  
-  Projeto de expansão de rede para uma empresa simulada.  
-- [**computer_network_loja_varejo**](https://github.com/ddqueiro/gestao_tecnologia_da_informacao/tree/main/computer_network_loja_varejo)  
-  Planejamento e configuração de rede para uma loja de varejo.  
+---
 
-### 🔐 Cibersegurança
-- [**cyber_security_conscientizacao_digital**](https://github.com/ddqueiro/gestao_tecnologia_da_informacao/tree/main/cyber_security_conscientizacao_digital)  
-  Campanha de conscientização digital para boas práticas em cibersegurança.  
-- [**cyber_security_fortalecimento_rede**](https://github.com/ddqueiro/gestao_tecnologia_da_informacao/tree/main/cyber_security_fortalecimento_rede)  
-  Estratégias de fortalecimento e segurança de infraestrutura de rede.  
+### ☁️ Cloud Computing & ETL
+- [**Processamento e Upload de Dados no Google Cloud**](https://github.com/ddqueiro/bootcamp_analise_de_dados/tree/main/projeto_GCP%20(Google_Cloud_Platform))  
+  Projeto voltado para integração de dados com a **Google Cloud Platform (GCP)**, incluindo **upload, armazenamento e processamento** de arquivos.  
 
-### 🌱 Ciência de Dados
-- [**data_science_dados_ambientais**](./https://github.com/ddqueiro/gestao_tecnologia_da_informacao/tree/main/data_science_dados_ambientais)  
-  Projeto de ciência de dados aplicado a bases ambientais.  
+- [**Projeto de ETL - Mercado Livre**](https://github.com/ddqueiro/bootcamp_analise_de_dados/tree/main/projeto_Processo_ETL)  
+  Desenvolvimento de um pipeline **ETL (Extract, Transform, Load)** para processar dados do **Mercado Livre**, utilizando Python para limpeza, transformação e análise dos dados extraídos.  
 
-### 🤖 Inteligência Artificial Explicável (XAI)
-- [**explainable_AI_(XAI)_lime_credit**](https://github.com/ddqueiro/gestao_tecnologia_da_informacao/tree/main/explainable_AI_(XAI)_lime_credit)  
-  Modelo de análise de crédito com **LIME** para interpretabilidade e explicabilidade.  
+---
+
+### 📊 Análise de Dados
+- [**Análise de Dados de Funcionários com Pandas**](https://github.com/ddqueiro/bootcamp_analise_de_dados/tree/main/projeto_analise_funcionarios)  
+  Estudo prático em **Python** com **Pandas** para análise exploratória de dados de funcionários, incluindo estatísticas descritivas e visualizações.  
+
+- [**Projeto de Análise e Gerenciamento de Funcionários**](https://github.com/ddqueiro/bootcamp_analise_de_dados/tree/main/projeto_python)  
+  Projeto focado em **análise e gerenciamento de dados de colaboradores**, utilizando Python para automação de relatórios e insights sobre a base de dados.  
 
 ---
 
 ## 🛠️ Tecnologias Utilizadas
-Ao longo destes projetos, foram utilizadas ferramentas e conceitos como:  
-- **Python, SQL, MongoDB**  
-- **Bibliotecas de Ciência de Dados e Machine Learning** (Pandas, Scikit-learn, Matplotlib, Numpy)  
-- **Conceitos e práticas de Redes de Computadores**  
-- **Fundamentos de Cibersegurança**  
-- **Matemática Aplicada e Estatística**  
+- **Linguagens:** Python, SQL  
+- **Banco de Dados:** MongoDB  
+- **Cloud:** Google Cloud Platform (GCP)  
+- **Bibliotecas:** Pandas, Matplotlib, PyMongo  
+- **Conceitos:** ETL, NoSQL, Modelagem de Dados, Análise Exploratória, Data Pipeline  
 
 ---
 
@@ -54,5 +48,4 @@ Ao longo destes projetos, foram utilizadas ferramentas e conceitos como:
 
 ---
 
-✨ Este repositório é parte da minha jornada acadêmica e reflete meu desenvolvimento nas áreas de **Dados, Cloud, IA e Gestão de TI**.
-****
+✨ Este repositório faz parte da minha jornada de aprendizado em **Dados e Cloud**, durante o Bootcamp de Análise de Dados.
