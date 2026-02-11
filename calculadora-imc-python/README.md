@@ -1,77 +1,169 @@
-# Calculadora de IMC com Classificação e Riscos de Saúde
+# Calculadora de IMC (OMS) -- Projeto  em Python
 
-## Descrição
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Status](https://img.shields.io/badge/Status-Projeto%20Acadêmico-blueviolet)
 
-Este projeto é uma calculadora de IMC (Índice de Massa Corporal) feita em Python.  
-Ela calcula o IMC com base no peso e altura do usuário, classifica o resultado e indica riscos de saúde específicos considerando idade e sexo.  
+------------------------------------------------------------------------
 
-- Adultos (18 a 59 anos) e idosos (60 anos ou mais) possuem faixas diferentes de classificação.  
-- Crianças e adolescentes (menos de 18 anos) **não devem utilizar o cálculo**, pois o IMC segue padrões diferentes nessa faixa etária.  
+## Autora
 
-## Funcionalidades
+**Dannyelly Queiroz**\
+Projeto desenvolvido para fins de estudo, com foco em prática de lógica
+de programação, estruturação de código e boas práticas em Python.
 
-- Calcula IMC a partir de peso (kg) e altura (m)  
-- Classifica o IMC em categorias de peso  
-- Indica risco de saúde relacionado à faixa de IMC, idade e sexo  
-- Valida entradas do usuário (não aceita valores negativos ou inválidos)  
+------------------------------------------------------------------------
 
-## Estrutura do Código
+## Objetivo do Projeto
 
-- **calcular_imc(peso, altura)**: retorna o IMC.  
-- **classificar_imc(imc, idade, sexo)**: retorna a classificação do IMC e o risco de saúde.  
-- **ler_valor(msg, tipo=float)**: lê e valida valores numéricos do usuário.  
-- **ler_sexo(msg)**: lê o sexo do usuário, aceitando apenas `M` ou `F`.  
-- **main()**: função principal que executa a calculadora.
+Desenvolver uma aplicação em linha de comando (CLI) capaz de:
 
-## Como usar
+- Calcular o Índice de Massa Corporal (IMC)
+- Aplicar regras de classificação segundo diretrizes oficiais
+- Validar entradas do usuário
+- Implementar lógica condicional baseada em idade e sexo
+- Organizar o código de forma modular e legível
 
-1. Certifique-se de ter o Python instalado na sua máquina.  
-2. Salve o arquivo `imc.py` em uma pasta de sua preferência.  
-3. Abra o terminal ou prompt de comando e navegue até a pasta do arquivo.  
-4. Execute o código com o comando:  
+Este projeto demonstra domínio de fundamentos importantes da programação
+em Python e organização de software.
 
-```bash
-python imc.py
+------------------------------------------------------------------------
+
+## Conceitos Aplicados
+
+Durante o desenvolvimento foram aplicados:
+
+- Estrutura condicional (if / elif / else)
+- Laços de repetição (while)
+- Tratamento de exceções (try / except)
+- Funções com responsabilidades bem definidas
+- Separação entre lógica de negócio e entrada de dados
+- Validação e sanitização de inputs
+- Normalização automática de unidades
+- Formatação de saída para melhor experiência do usuário
+
+------------------------------------------------------------------------
+
+## Arquitetura do Código
+
+O sistema foi dividido em camadas funcionais:
+
+### 1️⃣ Camada de Cálculo
+
+`calcular_imc(peso, altura)`\
+Responsável apenas pelo cálculo matemático:
+
+IMC = peso / (altura²)
+
+Essa separação facilita manutenção e testes futuros.
+
+------------------------------------------------------------------------
+
+### 2️⃣ Camada de Regra de Negócio
+
+`classificar_imc(imc, idade, sexo)`
+
+Implementa:
+
+- Classificação diferente para adultos (\< 60 anos)
+- Classificação específica para idosos (≥ 60 anos)
+- Alertas de risco personalizados por sexo
+
+Regras utilizadas:
+
+#### Adultos -- Diretrizes OMS
+
+| IMC            | Classificação        |
+|----------------|----------------------|
+| < 18.5         | Baixo peso           |
+| 18.5 – 24.9    | Peso adequado        |
+| 25 – 29.9      | Sobrepeso            |
+| 30 – 34.9      | Obesidade Grau I     |
+| 35 – 39.9      | Obesidade Grau II    |
+| ≥ 40           | Obesidade Grau III   |
+
+#### Idosos – Referência SISVAN
+
+| IMC        | Classificação                          |
+|------------|----------------------------------------|
+| < 22       | Baixo peso                             |
+| 22 – 27    | Peso adequado                          |
+| > 27       | Sobrepeso / Risco de obesidade         |
+
+### 3️⃣ Camada de Entrada e Validação
+
+`ler_valor(msg, tipo=float)`
+
+- Garante que o valor seja numérico
+- Impede valores negativos ou zero
+- Converte vírgula em ponto decimal
+- Converte altura digitada em centímetros automaticamente para metros
+
+`ler_sexo(msg)`
+
+- Restringe entrada para M ou F
+- Padroniza para letras maiúsculas
+
+------------------------------------------------------------------------
+
+### 4️⃣ Orquestração
+
+`main()`
+
+- Controla o fluxo do programa
+- Interrompe execução para menores de 18 anos
+- Exibe relatório final formatado
+
+------------------------------------------------------------------------
+
+## 🔎 Diferenciais Técnicos
+
+- Conversão automática de unidade (cm → m)
+- Validação robusta contra entradas inválidas
+- Segmentação de lógica por faixa etária
+- Código organizado e modular
+- Estrutura preparada para futuras evoluções (API, interface gráfica,
+    testes)
+
+------------------------------------------------------------------------
+
+## Exemplo de Execução
+
+``` text
+CALCULADORA DE IMC (OMS)
+
+Sua idade: 32
+Sexo (M/F): F
+Seu peso (kg): 63
+Sua altura (m): 163
+
+RESULTADO PARA: 32 anos | Mulher
+-> Seu IMC é: 23.71
+-> Classificação: Peso adequado
+-> Alerta de Saúde: Risco baixo.
 ```
 
-## Siga as instruções no terminal:
+------------------------------------------------------------------------
 
-O programa retornará:
+## Possíveis Evoluções Futuras
 
-- IMC calculado
-- Classificação do peso
-- Risco de saúde relacionado
+- Implementação de testes automatizados (pytest)
+- Transformação em API REST (FastAPI ou Flask)
+- Interface gráfica (Tkinter ou PyQt)
+- Interface Web
+- Containerização com Docker
+- Integração com banco de dados
 
-# Regras de Classificação
+------------------------------------------------------------------------
 
-## Tabela de Classificação do IMC
+## Tecnologias Utilizadas
 
-### Adultos (18 a 59 anos)
+-Python 3
+-Execução via terminal (CLI)
 
-| Faixa de IMC (kg/m²) | Classificação     |Risco de saúde                                           |
-|----------------------|-------------------|---------------------------------------------------------|
-| < 18.5               | Baixo peso        | Risco de desnutrição                                    |
-| 18.5 – 24.9          | Peso adequado     | Risco baixo                                             |
-| 25 – 29.9            | Sobrepeso         | Risco moderado de doenças cardiovasculares              |
-| 30 – 34.9            | Obesidade grau I  | Risco alto de doenças cardiovasculares                  |
-| 35 – 39.9            | Obesidade grau II | Risco muito alto de doenças cardiovasculares e diabetes |
-| ≥ 40                 | Obesidade grau III| Risco extremo de doenças crônicas                       |
+------------------------------------------------------------------------
 
-## Idosos (60 anos ou mais)
+## Observação
 
-| Faixa de IMC (kg/m²) | Classificação                 | Risco de saúde                                                                                                              |
-|----------------------|----------------------------------|------------------------------------------------------------                                                              |
-| < 22                 | Baixo peso / risco de sarcopenia | Risco elevado de fraqueza muscular e quedas                                                                              |
-| 22 – 27              | Peso adequado                    | Risco baixo                                                                                                              |
-| > 27                 | Sobrepeso / risco de obesidade   | Risco aumentado de doenças cardiovasculares + sexo específico: <br>- F: risco de osteoporose <br>- M: risco de hipertensão |
+O IMC é um indicador populacional e não substitui avaliação médica
+profissional.
 
-##
-Criado por Dannyelly Queiroz
-
-## 🔗 Referências Diretas (Fontes dos Dados)
-
-Este projeto utiliza os parâmetros técnicos oficiais das seguintes fontes:
-
-* **Adultos**: [Classificação da Organização Mundial da Saúde (OMS)](https://www.who.int/data/gho/data/themes/topics/topic-details/GHO/body-mass-index)
-* **Idosos (Regra dos 22-27)**: [Manual Técnico do SISVAN/Ministério da Saúde (Pág. 32)](https://bvsms.saude.gov.br/bvs/publicacoes/orientacoes_coleta_analise_dados_antropometricos.pdf)
-* **Riscos e Comorbidades**: [Diretrizes da Associação Brasileira para o Estudo da Obesidade (ABESO)](https://abeso.org.br/wp-content/uploads/2019/12/diretrizes-brasileiras-de-obesidade.pdf)

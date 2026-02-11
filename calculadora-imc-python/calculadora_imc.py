@@ -1,4 +1,4 @@
-# --- MINHAS FUNÇÕES DE CÁLCULO E LÓGICA ---
+# --- FUNÇÕES DE CÁLCULO E LÓGICA ---
 
 def calcular_imc(peso, altura):
     """Faz a conta básica: peso dividido pela altura ao quadrado."""
@@ -22,6 +22,7 @@ def classificar_imc(imc, idade, sexo):
             risco = "Risco baixo."
         elif imc < 30:
             classificacao = "Sobrepeso"
+            
             # Diferenciei o risco aqui: Homens tendem a ter mais gordura abdominal
             risco = "Risco moderado." + (" Atenção à gordura visceral." if sexo == "M" else " Atenção ao metabolismo.")
         elif imc < 35:
