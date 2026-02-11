@@ -166,4 +166,3 @@ RESULTADO PARA: 32 anos | Mulher
 
 O IMC é um indicador populacional e não substitui avaliação médica
 profissional.
-
