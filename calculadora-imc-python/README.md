@@ -1,6 +1,7 @@
 # Calculadora de IMC com Classificação e Riscos de Saúde
 
 ## Descrição
+
 Este projeto é uma calculadora de IMC (Índice de Massa Corporal) feita em Python.  
 Ela calcula o IMC com base no peso e altura do usuário, classifica o resultado e indica riscos de saúde específicos considerando idade e sexo.  
 
@@ -8,6 +9,7 @@ Ela calcula o IMC com base no peso e altura do usuário, classifica o resultado 
 - Crianças e adolescentes (menos de 18 anos) **não devem utilizar o cálculo**, pois o IMC segue padrões diferentes nessa faixa etária.  
 
 ## Funcionalidades
+
 - Calcula IMC a partir de peso (kg) e altura (m)  
 - Classifica o IMC em categorias de peso  
 - Indica risco de saúde relacionado à faixa de IMC, idade e sexo  
@@ -30,9 +32,9 @@ Ela calcula o IMC com base no peso e altura do usuário, classifica o resultado 
 
 ```bash
 python imc.py
+```
 
-Siga as instruções no terminal:
-
+## Siga as instruções no terminal:
 
 O programa retornará:
 
@@ -40,7 +42,7 @@ O programa retornará:
 - Classificação do peso
 - Risco de saúde relacionado
 
-Regras de Classificação
+# Regras de Classificação
 
 ## Tabela de Classificação do IMC
 
@@ -55,17 +57,21 @@ Regras de Classificação
 | 35 – 39.9            | Obesidade grau II | Risco muito alto de doenças cardiovasculares e diabetes |
 | ≥ 40                 | Obesidade grau III| Risco extremo de doenças crônicas                       |
 
-### Idosos (60 anos ou mais)
+## Idosos (60 anos ou mais)
 
-| Faixa de IMC (kg/m²) | Classificação                 | Risco de saúde                                                  |
-|----------------------|-------------------------------|----------------------------------------------------------------|
-| < 22                 | Baixo peso / risco de sarcopenia | Risco elevado de fraqueza muscular e quedas                    |
-| 22 – 27              | Peso adequado                  | Risco baixo                                                    |
-| > 27                 | Sobrepeso / risco de obesidade | Risco aumentado de doenças cardiovasculares + sexo específico:<br>- F: risco de osteoporose<br>- M: risco de hipertensão |
+| Faixa de IMC (kg/m²) | Classificação                 | Risco de saúde                                                                                                              |
+|----------------------|----------------------------------|------------------------------------------------------------                                                              |
+| < 22                 | Baixo peso / risco de sarcopenia | Risco elevado de fraqueza muscular e quedas                                                                              |
+| 22 – 27              | Peso adequado                    | Risco baixo                                                                                                              |
+| > 27                 | Sobrepeso / risco de obesidade   | Risco aumentado de doenças cardiovasculares + sexo específico: <br>- F: risco de osteoporose <br>- M: risco de hipertensão |
 
-
-O cálculo de IMC não é recomendado para menores de 18 anos.
-
-Autor
-
+##
 Criado por Dannyelly Queiroz
+
+## 🔗 Referências Diretas (Fontes dos Dados)
+
+Este projeto utiliza os parâmetros técnicos oficiais das seguintes fontes:
+
+* **Adultos**: [Classificação da Organização Mundial da Saúde (OMS)](https://www.who.int/data/gho/data/themes/topics/topic-details/GHO/body-mass-index)
+* **Idosos (Regra dos 22-27)**: [Manual Técnico do SISVAN/Ministério da Saúde (Pág. 32)](https://bvsms.saude.gov.br/bvs/publicacoes/orientacoes_coleta_analise_dados_antropometricos.pdf)
+* **Riscos e Comorbidades**: [Diretrizes da Associação Brasileira para o Estudo da Obesidade (ABESO)](https://abeso.org.br/wp-content/uploads/2019/12/diretrizes-brasileiras-de-obesidade.pdf)
