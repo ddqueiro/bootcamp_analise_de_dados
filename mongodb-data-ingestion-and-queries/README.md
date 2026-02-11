@@ -2,7 +2,7 @@
 
 Este projeto demonstra um pipeline de dados completo: desde a extração de dados brutos de planilhas até à análise avançada. O repositório está estruturado para separar o processo de carga (ETL) da análise exploratória.
 
-##  Estrutura do Projeto
+## Estrutura do Projeto
 
 O repositório está organizado nas seguintes pastas e arquivos:
 
@@ -27,7 +27,7 @@ Arquivo com as dependências do projeto: `pymongo` e `pandas`.
 
 ---
 
-##  Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 * **Python**: Linguagem principal.
 * **Pandas**: Manipulação e análise de dados.
