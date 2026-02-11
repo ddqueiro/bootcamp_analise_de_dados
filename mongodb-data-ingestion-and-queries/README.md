@@ -1,90 +1,100 @@
-# Projeto de Integração MongoDB com Google Colab
+# 📊 Integração MongoDB Atlas + Google Colab
 
-Este projeto realiza a integração entre o MongoDB e Google Colab, com o objetivo de importar dados de planilhas Google (formatos CSV) para coleções do MongoDB, realizar consultas específicas e manipular os dados utilizando o pandas.
+Este projeto demonstra um pipeline de dados completo: desde a extração de dados brutos de planilhas até à análise avançada. O repositório está estruturado para separar o processo de carga (ETL) da análise exploratória.
 
-## 🚀 Tecnologias Utilizadas
+##  Estrutura do Projeto
 
-- **Python**
-- **Pandas**
-- **PyMongo**
-- **MongoDB Atlas**
-- **Google Sheets (CSV)**
+O repositório está organizado nas seguintes pastas e arquivos:
+
+### 1. ingestao_dados
+
+Scripts responsáveis pela carga inicial:
+
+* Leitura de arquivos CSV vindos do Google Sheets.
+* Tratamento inicial de dados com **Pandas**.
+* Conexão e envio de dados para o **MongoDB Atlas** usando `insert_many()`.
+
+### 2. consultas_mongodb
+
+Scripts focados em análise e extração de dados:
+
+* Execução de queries NoSQL para filtragem de dados.
+* Conversão de resultados (cursores) para **DataFrames**.
+
+### 3.  requirements.txt
+
+Arquivo com as dependências do projeto: `pymongo` e `pandas`.
 
 ---
 
-## 📌 Requisitos
+##  Tecnologias Utilizadas
 
-Antes de executar o código, instale as dependências necessárias:
+* **Python**: Linguagem principal.
+* **Pandas**: Manipulação e análise de dados.
+* **PyMongo**: Driver oficial para integração com MongoDB.
+* **MongoDB Atlas**: Banco de dados NoSQL gerido na nuvem.
+
+---
+
+## Como Instalar e Executar
+
+### Opção A: No Google Colab(Nuvem)
+
+No Colab, você instala as bibliotecas diretamente em uma célula de código:
 
 ```python
-!pip install pymongo
- ```
+# Instalação direta no notebook
+!pip install pymongo pandas
+```
 
-## Configuração do MongoDB
-A conexão com o MongoDB é realizada usando a URI do MongoDB Atlas:
+### Opção B: Ambiente Local(PC/VS Code)
+
+Se estiver rodando no seu computador, utilize o arquivo requirements.txt para instalar as dependências:
+
+No seu terminal ou prompt de comando:
+
+```bash
+pip install -r requirements.txt
+
+```
+
+## Configuração da Conexão
+
+Em ambos os ambientes, a conexão com o banco de dados segue o mesmo padrão:
 
 ```python
-from pymongo.mongo_client import MongoClient
-from pymongo.server_api import ServerApi
+from pymongo import MongoClient
+import pandas as pd
 
-client = MongoClient("mongodb+srv://danny:102030@cluster0.gchy6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+# Substitua USUARIO e SENHA pelas suas credenciais do Atlas
+
+uri = "mongodb+srv://USUARIO:SENHA@cluster0.gchy6.mongodb.net/"
+client = MongoClient(uri)
 db = client['financeiro']
- ```
 
-## Importação de Dados
-O código lê planilhas do Google Sheets no formato CSV e insere os dados no MongoDB:
+```
+
+## Exemplos de Consultas
+
+Para extrair os dados e transformá-los em tabelas (DataFrames):
 
 ```python
 import pandas as pd
 
-fornecedor = pd.read_csv('<link_do_google_sheet>')
-fornecedor = fornecedor.to_dict(orient='records')
-colecao_fornecedor = db['fornecedor']
-colecao_fornecedor.insert_many(fornecedor)
- ```
-O mesmo processo é aplicado para outras coleções: recebimento, cliente, pagamento e banco.
+# 1. Filtrar Clientes de São Paulo
+query_sp = {'UF': "SÃO PAULO"}
+df_sp = pd.DataFrame(list(db.cliente.find(query_sp)))
 
+# 2. Filtrar Fornecedores Pessoa Física
+query_pf = {'Tipo Pessoa': "Pessoa Física"}
+df_pf = pd.DataFrame(list(db.fornecedor.find(query_pf)))
 
-## Consultas no MongoDB
-1️⃣ Filtrar clientes de São Paulo:
-
-```python
-query = {'UF': "SÃO PAULO"}
-cursor = colecao_cliente.find(query)
-cidade_sp = pd.DataFrame(list(cursor))
- ```
-
- 2️⃣ Filtrar fornecedores do tipo Pessoa Física:
-
-```python
- query = {'Tipo Pessoa': "Pessoa Física"}
-cursor = colecao_fornecedor.find(query)
-pessoa_fisica = pd.DataFrame(list(cursor))
- ```
-
- 3️⃣ Listar todos os recebimentos:
-```python
- cursor = colecao_recebimento.find()
-colecao_recebimentos = pd.DataFrame(list(cursor))
- ```
-
-4️⃣ Listar todos os pagamentos:
- ```python
- cursor = colecao_pagamento.find()
-colecao_pagamentos = pd.DataFrame(list(cursor))
- ```
-
-
- ## Como Executar:
-1.Instale o pacote Pymong:
-
- ```python
-
- !pip install pymongo
 ```
 
-2.Configure sua string de conexão MongoDB Atlas.
+## Segurança e Boas Práticas
 
-3.Carregue os dados CSV e insira no banco de dados.
+Aviso: Por segurança, nunca deixe sua senha exposta no código final ou no GitHub. No Colab, utilize o ícone de chave (Secrets) para gerenciar sua string de conexão com segurança.
 
-4.Execute as consultas desejadas e visualize os resultados em DataFrames.
+## Feito por Dannyelly Queiroz
+
+Projeto desenvolvido para fins de estudo em Engenharia e Análise de Dados.
