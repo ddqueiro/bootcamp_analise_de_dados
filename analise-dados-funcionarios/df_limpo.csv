@@ -1,0 +1,33 @@
+ID,Nome,Idade,Salário,Cargo,Departamento,Data de Contratação,Avaliação de Desempenho,Tecnologia da Informação,Anos Trabalhados,Categoria de Salário,Desempenho Simplificado,idade_5mais,salario_alto
+1,Juan,42.0,9276.79,Florista,Financeiro,2024-03-01,3,Financeiro,1.9835616438356165,Alto,Baixo,47.0,9911.71
+5,Pedro Miguel,47.0,5944.17,Neurocirurgião,RH,2024-06-06,6,RH,1.7178082191780821,Médio,Médio,52.0,9911.71
+6,Emilly,19.0,3272.55,Ginecologista,RH,2020-05-28,3,RH,5.745205479452054,Médio,Baixo,24.0,9911.71
+7,Valentina,62.0,5974.31,Bedel,Financeiro,2022-01-20,9,Financeiro,4.095890410958904,Médio,Alto,67.0,9911.71
+8,Laís,30.0,4802.08,Lubrificador de máquinas,Operações,2024-05-25,3,Operações,1.7506849315068493,Médio,Baixo,35.0,9911.71
+9,Beatriz,23.0,8775.87,Jogador de futebol,Marketing,2022-11-07,9,Marketing,3.2986301369863016,Alto,Alto,28.0,9911.71
+13,Pedro Miguel,23.0,2341.04,Moldureiro,RH,2022-11-29,1,RH,3.2383561643835614,Baixo,Baixo,28.0,9911.71
+14,Matheus,35.0,3789.4,Dublador,TI,2022-11-24,7,Tecnologia da Informação,3.252054794520548,Médio,Médio,40.0,9911.71
+20,Ana Sophia,33.0,6487.0,Cartunista,Financeiro,2024-01-03,6,Financeiro,2.1424657534246574,Médio,Médio,38.0,9911.71
+22,Ana Sophia,41.0,6886.18,Balconista,RH,2020-06-30,2,RH,5.654794520547945,Médio,Baixo,46.0,9911.71
+23,Nicolas,30.0,7663.33,Cantor,TI,2023-01-31,3,Tecnologia da Informação,3.0657534246575344,Alto,Baixo,35.0,9911.71
+25,Stella,55.0,7602.38,Tecnólogo em rochas ornamentais,RH,2024-08-29,2,RH,1.4876712328767123,Alto,Baixo,60.0,9911.71
+26,Rodrigo,56.0,5865.925111111112,Taxista,Marketing,2023-04-27,8,Marketing,2.83013698630137,Médio,Alto,61.0,9911.71
+27,Bruna,43.0,9833.68,Moleiro,RH,2021-05-03,9,RH,4.813698630136987,Alto,Alto,48.0,9911.71
+28,Luiz Henrique,41.0,5865.925111111112,Protético dentário,Marketing,2023-06-01,1,Marketing,2.734246575342466,Médio,Baixo,46.0,9911.71
+29,Luigi,63.0,2487.61,Pianista,Marketing,2021-08-22,8,Marketing,4.50958904109589,Baixo,Alto,68.0,9911.71
+30,Alice,61.0,5948.4,Cinegrafista,RH,2020-06-11,1,RH,5.706849315068493,Médio,Baixo,66.0,9911.71
+32,Beatriz,57.0,6126.69,Carnavalesco,TI,2022-02-03,4,Tecnologia da Informação,4.057534246575343,Médio,Médio,62.0,9911.71
+34,Sabrina,59.0,6427.74,Empacotador,Financeiro,2020-05-30,8,Financeiro,5.739726027397261,Médio,Alto,64.0,9911.71
+35,Bruna,33.0,2963.38,Ator,Marketing,2023-07-30,5,Marketing,2.5726027397260274,Baixo,Médio,38.0,9911.71
+36,Amanda,25.0,9479.6,Imunologista,RH,2023-08-26,8,RH,2.4986301369863013,Alto,Alto,30.0,9911.71
+37,Igor,63.0,3786.16,Quiropraxista,TI,2024-07-04,9,Tecnologia da Informação,1.641095890410959,Médio,Alto,68.0,9911.71
+38,Marcos Vinicius,21.0,4897.86,Ferroviário,RH,2021-03-08,6,RH,4.967123287671233,Médio,Médio,26.0,9911.71
+41,Camila,32.0,5471.34,Ferroviário,Marketing,2021-10-23,3,Marketing,4.33972602739726,Médio,Baixo,37.0,9911.71
+42,Maria Vitória,38.0,3758.97,Comerciante,RH,2023-03-21,2,RH,2.9315068493150687,Médio,Baixo,43.0,9911.71
+43,Luigi,32.0,5865.925111111112,Artista de circo,TI,2021-09-23,10,Tecnologia da Informação,4.421917808219178,Médio,Alto,37.0,9911.71
+44,Marcela,28.0,9325.74,Capitão,Operações,2022-11-06,3,Operações,3.3013698630136985,Alto,Baixo,33.0,9911.71
+45,Ana Clara,33.0,9647.46,Jogador de handebol,Marketing,2023-04-12,3,Marketing,2.871232876712329,Alto,Baixo,38.0,9911.71
+46,Diogo,23.0,1868.9,Figurante,Operações,2021-07-26,6,Operações,4.583561643835616,Baixo,Médio,28.0,9911.71
+47,Maria Sophia,29.0,5093.68,Telegrafista,Operações,2023-07-11,9,Operações,2.6246575342465754,Médio,Alto,34.0,9911.71
+48,Rafaela,60.0,7884.49,Judoca,Operações,2024-05-21,7,Operações,1.7616438356164383,Alto,Médio,65.0,9911.71
+49,Fernanda,61.0,2983.61,Ortoptista,TI,2020-03-30,3,Tecnologia da Informação,5.906849315068493,Baixo,Baixo,66.0,9911.71
