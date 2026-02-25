@@ -5,7 +5,7 @@ Este projeto realiza a exploração, limpeza, transformação e análise de mét
 
 ## Estrutura do Projeto
 
-``` 
+``` bash
 analise-dados-funcionarios
 │
 ├─ notebooks/
@@ -85,24 +85,23 @@ Colunas derivadas:
 git clone <URL_DO_REPOSITORIO>
 ```
 
-2. Instalar as bibliotecas necessárias:
+2.Instalar as bibliotecas necessárias:
 
 ```bash
 pip install pandas
 ```
 
-3. Carregar o dataset no notebook:
+3.Carregar o dataset no notebook:
 
 ```python
 import pandas as pd
 df = pd.read_csv("data/funcionarios.csv")
 ```
 
-4. Executar etapas de exploração, limpeza, engenharia de atributos e análises.
+4.Executar etapas de exploração, limpeza, engenharia de atributos e análises.
 
-5. Exportar dataset limpo:
+5.Exportar dataset limpo:
 
 ```python
 df.to_csv("output/df_limpo.csv", index=False)
 ```
-
