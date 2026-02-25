@@ -7,7 +7,8 @@ Este repositório contém códigos para **consultas e análises de dados de uma 
 
 ## Estrutura do Projeto
 
-```
+```bash
+
 locadora-mysql-analytics/
 │
 ├── ingestion/           # Código para conexão e ingestão de dados do MySQL
